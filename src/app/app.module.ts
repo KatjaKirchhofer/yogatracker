@@ -14,6 +14,8 @@ import { NewTrainingComponent } from './training/new-training/new-training.compo
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { HeaderComponent } from './navigation/header/header.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     SignInComponent,
     LogInComponent,
     CurrentTrainingComponent,
-    NewTrainingComponent
+    NewTrainingComponent,
+    SidenavListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
