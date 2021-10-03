@@ -1,1 +1,36 @@
-<p>new-training works!</p>
+<div class="card" fxFlexLayout fxLayoutAlign="center center">
+    <mat-card fxFlex="400px" fxFlex.xs="100%">
+        <mat-card-title fxLayoutAlign="center center">Start a new Yoga Session!</mat-card-title>
+
+
+        <mat-card-content fxLayoutAlign="center center">
+            <mat-form-field appearance="fill">
+                <mat-label>Exercise</mat-label>
+                <mat-select>
+                    <mat-option value="Sunsalutations">
+                        Sunsalutations
+                    </mat-option>
+
+                    <mat-option value="Warrior Sequence">
+                        Warrior Sequence
+                    </mat-option>
+
+                    <mat-option value="Hip Openers">
+                        Hip Openers
+                    </mat-option>
+
+                    <mat-option value="Headstand">
+                        Headstand
+                    </mat-option>
+
+                </mat-select>
+            </mat-form-field>
+
+        </mat-card-content>
+
+
+        <mat-card-actions fxLayoutAlign="center center">
+            <button (click)="startTraining()" type="submit" mat-raised-button>Start!</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

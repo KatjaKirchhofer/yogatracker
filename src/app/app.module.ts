@@ -11,11 +11,14 @@ import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { LogInComponent } from './auth/log-in/log-in.component';
 import { CurrentTrainingComponent } from './training/current-training/current-training.component';
 import { NewTrainingComponent } from './training/new-training/new-training.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { HeaderComponent } from './navigation/header/header.component';
+import { TrainingComponent } from './training/training.component';
+import { PastTrainingsComponent } from './training/past-trainings/past-trainings.component';
+import { StopTrainingComponent } from './training/current-training/stop-training/stop-training.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { HeaderComponent } from './navigation/header/header.component';
     CurrentTrainingComponent,
     NewTrainingComponent,
     SidenavListComponent,
-    HeaderComponent
+    HeaderComponent,
+    TrainingComponent,
+    PastTrainingsComponent,
+    StopTrainingComponent
   ],
   imports: [
     BrowserModule,
@@ -35,12 +41,14 @@ import { HeaderComponent } from './navigation/header/header.component';
     BrowserAnimationsModule,
     MaterialModule, 
     FormsModule,
+    ReactiveFormsModule,
     FlexLayoutModule
 
   ],
   providers: [
     {provide: MAT_DATE_LOCALE, useValue: 'de-DE'},
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [StopTrainingComponent]
 })
 export class AppModule { }
