@@ -19,6 +19,7 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { TrainingComponent } from './training/training.component';
 import { PastTrainingsComponent } from './training/past-trainings/past-trainings.component';
 import { StopTrainingComponent } from './training/current-training/stop-training/stop-training.component';
+import { AuthService } from './auth/auth.service';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { StopTrainingComponent } from './training/current-training/stop-training
   ],
   providers: [
     {provide: MAT_DATE_LOCALE, useValue: 'de-DE'},
+    AuthService
   ],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingComponent]
